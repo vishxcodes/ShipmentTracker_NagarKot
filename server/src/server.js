@@ -6,7 +6,7 @@ import prisma from './lib/prisma.js';
 
 const PORT = process.env.PORT || 5001;
 
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT,"0.0.0.0", () => {
   console.log(`\n==================================================`);
   console.log(`🚀 Nagarkot Forwarders Backend API`);
   console.log(`📡 Server listening on: http://localhost:${PORT}`);
